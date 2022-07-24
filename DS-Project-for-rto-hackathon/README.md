@@ -89,6 +89,15 @@ Input:
 * visibility	
 * NDVI	
 * impervious
+* annual_intake_2019
+* annual_intake_2020
+* annual_intake_2021
+* jurisdiction_size_sq_km
+* justidiction_state
+* jurisdiction_region
+* jurisdiction_pop_size
+* jurisdiction_pop_density_person_per_sq_km
+
 
 **Output:**
 * the distance (miles): This is a regression model
