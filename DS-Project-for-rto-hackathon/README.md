@@ -54,6 +54,7 @@ Also did one-hot encoding for categorical variables.
 ### EDA (interactive!):
 After getting all of this information, we want to build a model to predict the direction and distance of the animal's home. We need to explore the correlation between the response variables and…:
 1. Nearby Facilities: the distance of the found spot to nearby facility
+
 ![eda1](https://user-images.githubusercontent.com/63036112/180654664-a7803b9f-182f-48ad-984a-7e93696bf5d0.png)
 ![eda2](https://user-images.githubusercontent.com/63036112/180654711-56078bd3-e523-4fa7-9d5e-2a89baff2828.png)
 
@@ -63,11 +64,13 @@ After getting all of this information, we want to build a model to predict the d
 ![EDA5](https://user-images.githubusercontent.com/63036112/180654872-cde35144-4813-4ff6-88b4-3ef2a6615ec6.png)
 
 3. Geography Features: NDVI and percent imperviousness
+
 ![EDA6](https://user-images.githubusercontent.com/63036112/180654887-61c20b57-7c66-4d9c-93a4-627489ed2bc0.png)
 ![eda7](https://user-images.githubusercontent.com/63036112/180654895-e85ca202-b0c6-4502-8653-d24e444b9fb7.png)
 ![eda8](https://user-images.githubusercontent.com/63036112/180654905-5fedde6e-e717-4272-ac9c-b03bbb721981.png)
 
-6. Species: Dog or Cat
+4. Species: Dog or Cat
+
 ![eda9](https://user-images.githubusercontent.com/63036112/180654914-752fb027-a425-46a8-a2cc-3b11ca03684b.png)
 ![eda10](https://user-images.githubusercontent.com/63036112/180654918-688436d2-8950-454a-9a8b-f4351fa43b96.png)
 
