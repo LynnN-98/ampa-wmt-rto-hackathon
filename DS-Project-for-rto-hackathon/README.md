@@ -39,16 +39,37 @@ I used existing data to derive the following new features:
 2. **Urban Amenities!!** I calculated the distance between the found spot and the nearest commercial facility to try to measure this factor. I used Google Maps Nearby API [7] to extract the distance of the found location from the nearest 5 city facilities (might be Restaurants/Coffee/Petrol/Parking/Hotels....all the categories you can see on a Google Map), thus showing its proximity to public or commercial facilities in the city
 3. **Geography!!** Normalized Difference Vegetation Index [8] and percent imperviousness [9] of the location where the animal was found. I know these 2 features sounds a bit obscure, but according to geographic exploration scholars, these indicators can measure the land cover and land use to some extent. I used a geographic information system application called ArcGIS to find the raster data and extract the numerical variables. [10] [11] [12] If you have downloaded and configured your environment, you can see my results in the *GIS* folder.
 
+Also did one-hot encoding for categorical variables.
+
 ### Data visualizations:
+
+![geo1](https://user-images.githubusercontent.com/63036112/180654627-c8ac1b4e-704a-4cc9-8c8a-aacaa7241f50.png)
+
 1. Using the heat map of coordinates and distance (the redder the place represents the farther the distance), we found not only that the locations where pets were found were generally distributed next to buildings or by roads in the city, rather than near green areas or water sources, but also that pets near the edge of the city generally traveled a long distance. However, the specific characteristics of different cities vary, for example, downtown McAllen, TX also has a lot of pets found traveling long distances
+
+![geo](https://user-images.githubusercontent.com/63036112/180654647-c46f1122-9fd9-4df5-a934-3c4d1bff40bc.png)
+
 2. I drew the Origin-Destination Map [13] with the help of external professional software: ArcGIS and QGIS. Although these routes are very haphazard, it is still evident that in most cities the animals radiate from the center to the edge of the city. Moreover, most of the animals have very short movement distances, that is, they are found close to home and traveling thousands of miles to get them to the shelter is a very inefficient method.
 
-### EDA:
+### EDA (interactive!):
 After getting all of this information, we want to build a model to predict the direction and distance of the animal's home. We need to explore the correlation between the response variables and…:
 1. Nearby Facilities: the distance of the found spot to nearby facility
+![eda1](https://user-images.githubusercontent.com/63036112/180654664-a7803b9f-182f-48ad-984a-7e93696bf5d0.png)
+![eda2](https://user-images.githubusercontent.com/63036112/180654711-56078bd3-e523-4fa7-9d5e-2a89baff2828.png)
+
 2. Weather Features: Temperature, humidity, wind direction and visibility
+
+![eda3](https://user-images.githubusercontent.com/63036112/180654715-4e681f1d-792f-44e4-ac96-a4b120cc25bf.png)
+![EDA5](https://user-images.githubusercontent.com/63036112/180654872-cde35144-4813-4ff6-88b4-3ef2a6615ec6.png)
+
 3. Geography Features: NDVI and percent imperviousness
-4. Species: Dog or Cat
+![EDA6](https://user-images.githubusercontent.com/63036112/180654887-61c20b57-7c66-4d9c-93a4-627489ed2bc0.png)
+![eda7](https://user-images.githubusercontent.com/63036112/180654895-e85ca202-b0c6-4502-8653-d24e444b9fb7.png)
+![eda8](https://user-images.githubusercontent.com/63036112/180654905-5fedde6e-e717-4272-ac9c-b03bbb721981.png)
+
+6. Species: Dog or Cat
+![eda9](https://user-images.githubusercontent.com/63036112/180654914-752fb027-a425-46a8-a2cc-3b11ca03684b.png)
+![eda10](https://user-images.githubusercontent.com/63036112/180654918-688436d2-8950-454a-9a8b-f4351fa43b96.png)
 
 ### Modeling:
 Based on the relative positions of the outcome and found coordinates, we calculated the ordinal directions[3], which have four categories. The calculation method is detailed in Ref.
@@ -101,6 +122,8 @@ https://www.youtube.com/watch?v=Xt-LaZSC8Wc
  * Places API - Get nearby facilities information
  * ArgGIS - Get geographic features based on jurisdiction region
  * QGIS - Draw interactive OD Map
+ * matplotlib, seaborn, plotly - visualizations
+ * folium - heat map
 
 ## Reference
 [1] https://www.missinganimalresponse.com/lost-dog-behavior/
