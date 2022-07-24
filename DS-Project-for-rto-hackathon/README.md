@@ -5,7 +5,8 @@ Highlights:
 1. My data is accurate. I used Google Maps API to correct all the longitudes and latitudes
 2. My visualizations are fabulous. You can interactively analyze the interaction of animal movement routes with urban facilities!
 3. My goal is practical and ambitious. It is possible for us to predict the direction and distance of the pet's home at the moment we find it.
-(datafolio)
+
+![datafolio](https://user-images.githubusercontent.com/63036112/180656563-e2df2074-8114-4295-a677-dffef8856c7f.png)
 
 ## Challenge Category: Data Science
 
@@ -45,7 +46,7 @@ Also did one-hot encoding for categorical variables.
 
 ![geo1](https://user-images.githubusercontent.com/63036112/180654627-c8ac1b4e-704a-4cc9-8c8a-aacaa7241f50.png)
 
-1. Using the heat map of coordinates and distance (the redder the place represents the farther the distance), we found not only that the locations where pets were found were generally distributed next to buildings or by roads in the city, rather than near green areas or water sources, but also that pets near the edge of the city generally traveled a long distance. However, the specific characteristics of different cities vary, for example, downtown McAllen, TX also has a lot of pets found traveling long distances
+1. Using the heat map of coordinates and distance (the redder the place represents the farther the distance), I found not only that the locations where pets were found were generally distributed next to buildings or by roads in the city, rather than near green areas or water sources, but also that pets near the edge of the city generally traveled a long distance. However, the specific characteristics of different cities vary, for example, downtown McAllen, TX also has a lot of pets found traveling long distances
 
 ![geo](https://user-images.githubusercontent.com/63036112/180654647-c46f1122-9fd9-4df5-a934-3c4d1bff40bc.png)
 
@@ -130,18 +131,30 @@ https://www.youtube.com/watch?v=Xt-LaZSC8Wc
 
 ## Reference
 [1] https://www.missinganimalresponse.com/lost-dog-behavior/
+
 [2] https://www.missinganimalresponse.com/lost-cat-behavior/
+
 [3] https://www.analytics-link.com/post/2018/08/21/calculating-the-compass-direction-between-two-points-in-python
+
 [4] https://developers.google.com/maps/documentation/geocoding/best-practices
+
 [5] https://geopy.readthedocs.io/en/stable/#module-geopy.distance
+
 [6] https://www.visualcrossing.com/resources/documentation/weather-api/timeline-weather-api/
+
 [7] https://developers.google.com/maps/documentation/places/web-service/search-nearby 
+
 [8] https://gisgeography.com/ndvi-normalized-difference-vegetation-index/
+
 [9] https://dec.vermont.gov/sites/dec/files/wsm/lakes/docs/Shoreland/lp_AppendixFImpervious.pdf
+
 [10] Ndvi data source: nasa website 
 https://neo.gsfc.nasa.gov/view.php?datasetId=MOD_NDVI_M
+
 [11] Impervious surface data source: 
 https://zenodo.org/record/3505079#.Yt0SwnZBxx2
 Inversion results from multi-source satellite remote sensing data
+
 [12] U.S. Administrative Border Data: https://gadm.org/download_country.html
+
 [13] https://medium.com/@CompassIoT/what-is-origin-destination-mapping-what-can-it-teach-us-about-mobility-f6088e10bfb1
