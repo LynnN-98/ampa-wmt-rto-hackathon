@@ -1,7 +1,7 @@
-{{your_project.project_name}}
+DS-Project-for-rto-hackathon
 ==============================
 
-{{your_project.description}}
+Here is a structure of our submission files
 
 ### Project Structure
 ------------
