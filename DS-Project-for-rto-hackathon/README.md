@@ -90,5 +90,32 @@ https://www.youtube.com/watch?v=Xt-LaZSC8Wc
 
 ## Tools Used
 
- * OSM - Map Data Extraction and Visual Generation
- * 
+ * googlemaps - Use Google Maps API
+ * geopy - Calculate distance
+ * multiprocessing - Batch processing of large amounts of data
+ * funUtils - look up direction by latitude & longitude of 2 points
+ * sklearn - modeling
+ * pickle - save models
+ * Timeline Weather API - get historical weather data with dates and cities
+ * Geocoding API - Get coordinates by address
+ * Places API - Get nearby facilities information
+ * ArgGIS - Get geographic features based on jurisdiction region
+ * QGIS - Draw interactive OD Map
+
+## Reference
+[1] https://www.missinganimalresponse.com/lost-dog-behavior/
+[2] https://www.missinganimalresponse.com/lost-cat-behavior/
+[3] https://www.analytics-link.com/post/2018/08/21/calculating-the-compass-direction-between-two-points-in-python
+[4] https://developers.google.com/maps/documentation/geocoding/best-practices
+[5] https://geopy.readthedocs.io/en/stable/#module-geopy.distance
+[6] https://www.visualcrossing.com/resources/documentation/weather-api/timeline-weather-api/
+[7] https://developers.google.com/maps/documentation/places/web-service/search-nearby 
+[8] https://gisgeography.com/ndvi-normalized-difference-vegetation-index/
+[9] https://dec.vermont.gov/sites/dec/files/wsm/lakes/docs/Shoreland/lp_AppendixFImpervious.pdf
+[10] Ndvi data source: nasa website 
+https://neo.gsfc.nasa.gov/view.php?datasetId=MOD_NDVI_M
+[11] Impervious surface data source: 
+https://zenodo.org/record/3505079#.Yt0SwnZBxx2
+Inversion results from multi-source satellite remote sensing data
+[12] U.S. Administrative Border Data: https://gadm.org/download_country.html
+[13] https://medium.com/@CompassIoT/what-is-origin-destination-mapping-what-can-it-teach-us-about-mobility-f6088e10bfb1
